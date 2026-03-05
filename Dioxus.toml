@@ -1,6 +1,8 @@
 [application]
 name = "Steven Wing - Portfolio"
 default_platform = "web"
+out_dir = "dist"
+
 
 [web.app]
 title = "Steven Wing - Portfolio"
