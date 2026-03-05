@@ -13,7 +13,7 @@ pub const PROJECT: Project = Project {
     description: DESCRIPTION,
     tech_stack: "Dioxus, Rust",
     image: "portfolio2.png",
-    github: Some("https://github.com/DraconianLore/Portfolio"),
+    github: Some("https://github.com/DraconianLore/PortfolioV2"),
     live: Some("https://projects.stevenwing.dev"),
     project_logo: None,
     logos: &[
