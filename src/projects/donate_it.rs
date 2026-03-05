@@ -17,7 +17,7 @@ pub const PROJECT: Project = Project {
     description: DESCRIPTION,
     tech_stack: "Ruby, Rails, Angular, PostgreSQL",
     image: "donateIT.gif",
-    github: Some("https://github.com/ChesterCorin/vanhacks-2019-frontend"),
+    github: None,
     live: None,
     project_logo: Some("dITLogo.png"),
     logos: &[

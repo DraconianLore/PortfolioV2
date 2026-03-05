@@ -76,6 +76,8 @@ body {
     border: 1px solid var(--border-soft);
     box-shadow: 0 35px 80px rgba(0, 0, 0, 0.45);
     padding: 2rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .carousel-header {
@@ -84,6 +86,59 @@ body {
     align-items: center;
     gap: 1.5rem;
     margin-bottom: 1.75rem;
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 600ms ease;
+    will-change: transform;
+}
+
+.carousel-stack {
+    display: none;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.project-frame {
+    flex: 0 0 100%;
+    background: rgba(17, 19, 38, 0.85);
+    border-radius: 26px;
+    border: 1px solid var(--border-soft);
+    padding: 2rem;
+}
+
+.carousel-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    border: 1px solid var(--border-soft);
+    background: var(--accent-dark);
+    color: var(--text-primary);
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+    z-index: 10;
+}
+
+.carousel-nav:hover {
+    transform: translateY(-50%) scale(1.05);
+    background: var(--accent);
+}
+
+.carousel-nav-left {
+    left: 2rem;
+}
+
+.carousel-nav-right {
+    right: 2rem;
+}
+
+.carousel-stack .project-frame {
+    flex: 1;
 }
 
 .carousel-btn {
@@ -126,19 +181,6 @@ body {
     font-size: 1rem;
 }
 
-.project-frame {
-    background: rgba(17, 19, 38, 0.85);
-    border-radius: 26px;
-    border: 1px solid var(--border-soft);
-    padding: 2rem;
-}
-
-.project-body {
-    display: flex;
-    flex-direction: column;
-    gap: 1.75rem;
-}
-
 .project-media {
     background: radial-gradient(circle at top, rgba(12, 14, 28, 0.95), rgba(6, 8, 18, 0.9));
     border-radius: 24px;
@@ -147,8 +189,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
     max-width: 900px;
     margin: 0 auto 0.25rem;
+    box-sizing: border-box;
 }
 
 .project-media-content {
@@ -201,22 +245,6 @@ body {
     flex-wrap: wrap;
 }
 
-.meta-line {
-    margin: 0;
-    font-size: 0.95rem;
-}
-
-.meta-label {
-    font-weight: 600;
-    color: var(--text-primary);
-    margin-right: 0.35rem;
-}
-
-.project-meta a {
-    color: var(--accent);
-    text-decoration: none;
-}
-
 .project-link-card {
     width: min(320px, 100%);
     min-height: 150px;
@@ -243,6 +271,7 @@ body {
 .project-link-icon {
     height: 100px;
     width: auto;
+    max-width: 100%;
     object-fit: contain;
 }
 

@@ -50,9 +50,9 @@ pub mod minor_projects;
 
 const PROJECTS: &[Project] = &[
     talesmyth::PROJECT,
-    portfolio::PROJECT,
-    dmpt::PROJECT,
     gamematch::PROJECT,
+    dmpt::PROJECT,
+    portfolio::PROJECT,
     runescribe::PROJECT,
     quotechat::PROJECT,
     donate_it::PROJECT,

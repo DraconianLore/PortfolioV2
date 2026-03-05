@@ -7,7 +7,7 @@ const DESCRIPTION: &[DescriptionBlock] = &[
     },
     DescriptionBlock {
         block_type: DescriptionType::Paragraph,
-        content: "Talesmyth is a worldbuilding and story-planning tool for writers, game masters, and game designers. It provides a unified workspace to create interconnected worlds with characters, locations, items, factions, lore, and other story elements, replacing scattered notes with automatic linking, consistent context, genre templates, and optional AI for brainstorming while keeping you in creative control.",
+        content: "Talesmyth is a worldbuilding and story-planning platform for writers, game masters, and game designers. It provides a unified workspace to create interconnected worlds with characters, locations, items, factions, lore, and other story elements, replacing scattered notes with automatic linking, consistent context, genre templates, and optional AI for brainstorming while keeping you in creative control.",
     },
     DescriptionBlock {
         block_type: DescriptionType::Paragraph,
@@ -17,7 +17,7 @@ const DESCRIPTION: &[DescriptionBlock] = &[
 
 pub const PROJECT: Project = Project {
     name: "Talesmyth",
-    tagline: "Worldbuilding tool for authors, GMs, and more",
+    tagline: "Worldbuilding platform for authors, GMs, and more",
     description: DESCRIPTION,
     tech_stack: "React, Rails, PostgreSQL, Astro",
     image: "talesmyth.webm",
