@@ -36,8 +36,8 @@ fn Header() -> Element {
     rsx! {
         header { class: "site-header",
             h1 { "Steven Wing's Portfolio" }
-            a { class: "resume-link", href: "https://www.stevenwing.dev", target: "_blank",
-                "View Resume"
+            a { class: "resume-link", href: "https://www.stevenwing.dev",
+                "View Résumé"
             }
         }
     }
