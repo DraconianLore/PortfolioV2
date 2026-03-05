@@ -1,0 +1,10 @@
+[application]
+name = "Steven Wing - Portfolio"
+default_platform = "web"
+
+[web.app]
+title = "Steven Wing - Portfolio"
+
+[bundle]
+identifier = "dev.stevenwing.portfolio"
+publisher = "Steven Wing"
